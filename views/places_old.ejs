@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Member's App</title>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="/javascripts/script3.js"></script>
+	</head>
+	<body>
+    <p> Welcome to the Member's App.</p>
+
+      <div>
+          <label>Group Key:</label>
+          <p id="group_key"> <%= group_key %> </p>
+      </div>
+
+      <div>
+          <label>Did not vote yet:</label>
+          <p id="not_voted_members"> </p>
+      </div>
+
+      <% for(var i=0; i < obj.length; i++) { %>
+
+      <div>
+          <img src= <%= obj[i].icon %> width="50" height="50">
+          <p><%= obj[i].name %></p>
+          <p><%= obj[i].rating %></p>
+          <p><%= obj[i].vicinity %></p>
+          <button class="vote" value= <%= obj[i].place_id %> > Vote!</button>
+      </div>
+
+      <% } %>
+
+
+	</body>
+</html>
+
+

@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meetup | Group</title>
+
+
+    <link rel="stylesheet" href="/stylesheets/foundation.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+    <link rel="stylesheet" href="/stylesheets/login_style.css" />
+    <link rel="stylesheet" href="/foundation-icons/foundation-icons.css" />
+
+    <script type="text/javascript" src="/javascripts/vendor/modernizr.js"></script>
+   
+
+  </head>
+
+
+  <body>
+
+  <!-- ************************* -->
+  <!-- Navigation bar -->
+  <!-- ************************* -->
+
+  <div class="fixed">
+       <nav class="top-bar" data-topbar="" data-options="sticky_on: large;">
+            
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="/"><img id="button_logo" src="../images/logo2.png"></a></h1>  
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            
+            
+          <section class="top-bar-section" style="left: 0%;">
+              <ul class="right">
+          
+                              <li class="active"><a style="background-color: #FA8900;" href="/registration.html">Sign Up</a></li>
+                        
+                <li><a href="/login.html">Login</a></li>
+              </ul>
+          </section>
+
+      </nav>
+    </div>
+
+  <!-- ************************* -->
+  <!-- Content -->
+  <!-- ************************* -->
+
+ <div id="section1" class="sections">
+
+ </br>
+
+    <h2 class="text-center">Group</h2>
+
+        </br></br>
+
+    <!-- Panel 1   --> 
+    <div class="row">
+        <div id="my_panel1" class="large-8 small-centered panel text-center">
+
+          </br>
+          <div class="row">
+            <h5>Group Name:</h5>
+            <h2 id="group_name"><%= group_name %></h2>
+          </div>
+
+          </br>
+          <div class="row">
+              <h5>Group Key:</h5>
+              <h3 id="group_key"> <%= group_key %> </h3>
+          </div>
+
+          </br>
+          <div class="row">
+              <h5>Group Owner:</h5>
+              <h3 id="group_owner"> <%= group_owner %> </h3>
+          </div>
+
+         
+
+          </br>
+          <div class="row">
+              <h5>Group Members:</h5>
+              <div id="current_members"></div>
+          </div>
+
+          <% if(group_owner == username) { %>
+          </br>
+          <div class="row">
+              <h5>Everyone In?</h5>
+              <a class="button" id="group_complete_button"> Group Complete</a>
+          </div>
+
+          <% } %> 
+
+
+        </div>
+
+
+    </div>
+
+
+ </div>
+  
+  <!-- ************************* -->
+  <!-- Footer -->
+  <!-- ************************* -->
+
+  <div class="footer">
+     
+        <div class="row">
+            <div class="large-4 columns links text-center">
+                </br></br></br>
+                <a href="/about">About</a> &nbsp&nbsp | &nbsp&nbsp 
+                <a href="mailto:maher460@gmail.com?Subject=General%20contact" target="_top">Contact</a>
+            </div>
+
+            <div class="large-4 columns social text-center">
+              </br>
+                <a href="https://www.facebook.com" target="_blank"><i class="fi-social-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fi-social-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fi-social-linkedin"></i></a>
+               
+            </div>
+            <div class="large-4 columns copyright text-center">
+              </br></br></br>
+                2015 © meetup.com
+            </div>
+        </div>
+      </br></br>
+    </div>
+
+
+
+  <script type="text/javascript" src="/javascripts/vendor/jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/foundation.min.js"></script>
+  <script type="text/javascript" src="/javascripts/script2.js"></script>
+
+  <script>
+    $(document).foundation();
+  </script> 
+  </body>
+
+
+</html>

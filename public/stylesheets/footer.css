@@ -1,0 +1,58 @@
+.footer {
+	background-color: #4F4F4F;
+	opacity: 0.9;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FA8900;
+    text-decoration: none;
+}
+
+a:visited:hover {
+    color: #FA8900;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FA8900;
+    text-decoration: none;
+}
+
+a:active:hover {
+    color: #FA8900;
+    text-decoration: none;
+}
+
+
+.links {
+	font-size: 125%;
+	color: white;
+}
+
+.social {
+	font-size: 250%;
+}
+
+.copyright {
+	font-size: 125%;
+	color: white;
+}
+.footerInnerDiv{
+	height:50px;
+
+}
+.footerDiv {
+margin-top:60px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Member's App</title>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- <script src="/javascripts/script1.js"></script> -->
+	</head>
+	<body>
+    <p> Welcome to the Member's App.</p>
+
+       <div>
+          <label>Group Key:</label>
+          <p id="group_key"> <%= group_key %> </p>
+      </div>
+
+      <div>
+          <img src= <%= obj.icon %> width="50" height="50">
+          <p>Name: <%= obj.name %></p>
+          <p>Rating: <%= obj.rating %></p>
+          <p>Vicinity: <%= obj.vicinity %></p>
+          <p>Latitude: <%= obj.latitude %></p>
+          <p>Longitude: <%= obj.longitude %></p>
+      </div>
+
+
+	</body>
+</html>

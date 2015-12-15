@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meetup | Login</title>
+    
+
+    <link rel="stylesheet" href="/stylesheets/foundation.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+    <link rel="stylesheet" href="/stylesheets/login_style.css" />
+    <link rel="stylesheet" href="/foundation-icons/foundation-icons.css" />
+
+    <script type="text/javascript" src="/javascripts/vendor/modernizr.js"></script>
+   
+
+
+  </head>
+
+
+  <body>
+
+  <!-- ************************* -->
+  <!-- Navigation bar -->
+  <!-- ************************* -->
+
+  <div class="fixed">
+       <nav class="top-bar" data-topbar="" data-options="sticky_on: large;">
+            
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="/"><img id="button_logo" src="images/logo2.png"></a></h1>  
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            
+            
+          <section class="top-bar-section" style="left: 0%;">
+              <ul class="right">
+                <!-- <li class="active"><a style="background-color: gray;" href="/feedback">Feedback</a></li> -->
+                              <li class="active"><a style="background-color: #FA8900;" href="/registration.html">Sign Up</a></li>
+                              <!-- <li><a href="/plan_page">Start Planning</a></li> -->
+                <li><a href="/login.html">Login</a></li>
+              </ul>
+          </section>
+
+      </nav>
+    </div>
+
+  <!-- ************************* -->
+  <!-- Content -->
+  <!-- ************************* -->
+
+ <div id="section1" class="sections">
+
+ </br>
+
+    <h2 class="text-center">Login</h2>
+
+        </br></br>
+
+    <!-- Panel 1   --> 
+    <div class="row">
+        <div id="my_panel1" class="large-8 small-centered panel text-center">
+
+            <!-- Sign up  -->
+           
+            <form method="POST" action="/login" accept-charset="UTF-8" class="form">
+              
+              <div class="row">
+                <div class="large-3 columns">
+                  <label for="right-label" class="left inline">Username:</label>
+                </div>
+                <div class="large-9 columns">                              
+                  <input name="username" type="text" placeholder="johndoe"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-3 columns">
+                  <label for="right-label" class="left inline">Password:</label>
+                </div>
+                <div class="large-9 columns">   
+                  <input name="password" type="password" placeholder="password" />   
+                </div>                  
+              </div>
+
+          </br></br>
+            <input class="button expand" type="submit" value="Login">
+      
+      <a href="/registration.html" class="button">Register</a>
+      </form>
+
+
+        </div>
+    </div>
+
+
+ </div>
+  
+  <!-- ************************* -->
+  <!-- Footer -->
+  <!-- ************************* -->
+
+  <div class="footer">
+     
+        <div class="row">
+            <div class="large-4 columns links text-center">
+                </br></br></br>
+                <a href="/about">About</a> &nbsp&nbsp | &nbsp&nbsp 
+                <a href="mailto:maher460@gmail.com?Subject=General%20contact" target="_top">Contact</a>
+            </div>
+
+            <div class="large-4 columns social text-center">
+              </br>
+                <a href="https://www.facebook.com" target="_blank"><i class="fi-social-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fi-social-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fi-social-linkedin"></i></a>
+               
+            </div>
+            <div class="large-4 columns copyright text-center">
+              </br></br></br>
+                2015 © meetup.com
+            </div>
+        </div>
+      </br></br>
+    </div>
+
+
+  <script type="text/javascript" src="/javascripts/vendor/jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/foundation.min.js"></script>
+
+  <script>
+    $(document).foundation();
+  </script> 
+  </body>
+
+
+</html>
